@@ -1,41 +1,9 @@
 ---
-const pages = [
-  { title: "Home", href: "/" },
-  { title: "About", href: "/about" },
-  { title: "Blog", href: "/blog" },
-  { title: "Contact", href: "/contact" },
-];
+import Navigation from "./Navigation.astro";
 ---
 
-<ul>
-  {
-    pages.map((page) => (
-      <li>
-        <a href={page.href}>{page.title}</a>
-      </li>
-    ))
-  }
-</ul>
-
-<style lang="scss">
-  ul {
-    display: flex;
-    gap: 1rem;
-    list-style: none;
-    padding: 0;
-  }
-
-  li {
-    margin: 0;
-  }
-
-  a {
-    text-decoration: none;
-    color: var(--accent-color);
-    transition: ease-in-out 0.2s;
-  }
-
-  a:hover {
-    opacity: 0.6;
-  }
-</style>
+<header>
+  <nav>
+    <Navigation />
+  </nav>
+</header>

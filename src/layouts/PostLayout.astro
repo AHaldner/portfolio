@@ -1,0 +1,19 @@
+---
+import Footer from "../components/Footer.astro";
+import Header from "../components/Header.astro";
+import Layout from "./Layout.astro";
+const { frontmatter } = Astro.props;
+---
+
+<Layout title={frontmatter.title}>
+  <Header />
+  <img src={frontmatter.image.url} alt={frontmatter.image.alt} width="300" />
+  <div class="post-info">
+    <p>{frontmatter.pubDate.toString().slice(0, 10)}</p>
+    <p>{frontmatter.author}</p>
+  </div>
+  <h1>{frontmatter.title}</h1>
+  <p>{frontmatter.description}</p>
+  <slot />
+  <Footer />
+</Layout>
