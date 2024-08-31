@@ -1,14 +1,11 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Header from "../components/Header.astro";
-import Footer from "../components/Footer.astro";
 
 const allPosts = await Astro.glob("./posts/*.md");
 const pageTitle = "Blog";
 ---
 
 <Layout title={pageTitle}>
-  <Header />
   <p>Just some blogposts about stuff I learned.</p>
   <ul>
     {
@@ -19,5 +16,4 @@ const pageTitle = "Blog";
       ))
     }
   </ul>
-  <Footer />
 </Layout>

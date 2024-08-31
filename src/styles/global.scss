@@ -9,4 +9,15 @@ html {
   --bg-color: #1a1b26;
   --text-color: #c0caf5;
   --accent-color: #bb9af7;
+  --content-width: 800px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--accent-color);
+  transition: ease-in-out 0.2s;
+
+  &:hover {
+    opacity: 0.6;
+  }
 }

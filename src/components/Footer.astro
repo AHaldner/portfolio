@@ -2,4 +2,25 @@
 import Social from "./Social.astro";
 ---
 
-<Social platform="github.com" username="AHaldner" />
+<footer>
+  <div class="footer-socials">
+    <Social platform="github.com" username="AHaldner" />
+    <Social platform="bluesky.com" username="tihncs" />
+    <Social platform="threads.net" username="tihncs" />
+  </div>
+</footer>
+
+<style lang="scss">
+  footer {
+    max-width: var(--content-width);
+    margin: auto;
+  }
+
+  .footer {
+    &-socials {
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+    }
+  }
+</style>
