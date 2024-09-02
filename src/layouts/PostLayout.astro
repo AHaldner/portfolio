@@ -15,8 +15,10 @@ const { frontmatter } = Astro.props;
     <p>{frontmatter.pubDate.toString().slice(0, 10)}</p>
     <p>{frontmatter.author}</p>
   </div>
-  <h1>{frontmatter.title}</h1>
-  <p>{frontmatter.description}</p>
+  <div class="post-heading">
+    <h1>{frontmatter.title}</h1>
+    <p>{frontmatter.description}</p>
+  </div>
   <slot />
 </Layout>
 
@@ -33,6 +35,10 @@ const { frontmatter } = Astro.props;
       flex-direction: row;
       margin-bottom: 20px;
       justify-content: space-between;
+    }
+
+    &-heading {
+      margin-bottom: 50px;
     }
   }
 </style>

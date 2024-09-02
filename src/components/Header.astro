@@ -1,9 +1,12 @@
 ---
 import Navigation from "./Navigation.astro";
+
+const pageName = "Andrin's Portfolio";
 ---
 
 <header>
   <nav>
+    <span>{pageName}</span>
     <Navigation />
   </nav>
 </header>
@@ -12,5 +15,13 @@ import Navigation from "./Navigation.astro";
   nav {
     max-width: var(--content-width);
     margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    span {
+      font-weight: 700;
+    }
   }
 </style>
