@@ -1,23 +1,23 @@
 html {
-  font-family: monospace;
-  background: var(--bg-color);
-  color: var(--text-color);
-  padding: 1rem;
+    font-family: monospace;
+    background: var(--bg-color);
+    color: var(--text-color);
+    padding: 1rem;
 }
 
 :root {
-  --bg-color: #1a1b26;
-  --text-color: #c0caf5;
-  --accent-color: #bb9af7;
-  --content-width: 800px;
+    --bg-color: #1a1b26;
+    --text-color: #c0caf5;
+    --accent-color: #bb9af7;
+    --content-width: 800px;
 }
 
 a {
-  text-decoration: none;
-  color: var(--accent-color);
-  transition: ease-in-out 0.2s;
+    text-decoration: none;
+    color: var(--accent-color);
+    transition: ease-in-out 0.2s;
 
-  &:hover {
-    opacity: 0.6;
-  }
+    &:hover {
+        opacity: 0.6;
+    }
 }

@@ -1,13 +1,26 @@
 ---
-import Layout from "../layouts/Layout.astro";
-
-const pageTitle = "Portfolio";
+import Layout from '@layouts/Layout.astro';
 ---
 
-<Layout title={pageTitle}>
-  <h1>Welcome to my personal portfolio</h1>
-  <p>
-    Astro is a new kind of static site builder that delivers lightning-fast
-    performance with a modern developer experience.
-  </p>
+<Layout>
+    <h1>Hi, I'm Andrin</h1>
+    <ny>He / Him · Backend-leaning web dev & collector of shiny things · Silly cat enjoyer</ny>
+    <p>
+        I'm a web dev who keeps drifting further and further into the backend—wiring services
+        together, breaking things on purpose, and currently learning Rust so I can break them
+        faster, but more safely.
+    </p>
+    <p>
+        I wrote my own Bun security scanner,
+        <a
+            href="https://www.npmjs.com/package/@tihn/bun-guard"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            @tihn/bun-guard
+        </a>
+        , powered by the osv.dev database, and I sometimes make silly placeholder sites like
+        <a href="https://waga.gay" target="_blank" rel="noopener noreferrer">waga.gay</a>
+        when I'm bored of using example.com.
+    </p>
 </Layout>

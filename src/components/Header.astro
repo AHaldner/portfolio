@@ -1,27 +1,29 @@
 ---
-import Navigation from "./Navigation.astro";
+import Navigation from '@components/Navigation.astro';
 
-const pageName = "Andrin's Portfolio";
+const pageName = 'tihn.dev';
 ---
 
 <header>
-  <nav>
-    <span>{pageName}</span>
-    <Navigation />
-  </nav>
+    <nav>
+        <a href="/">
+            <span>{pageName}</span>
+        </a>
+        <Navigation />
+    </nav>
 </header>
 
 <style lang="scss">
-  nav {
-    max-width: var(--content-width);
-    margin: auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    nav {
+        max-width: var(--content-width);
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
 
-    span {
-      font-weight: 700;
+        span {
+            font-weight: 700;
+        }
     }
-  }
 </style>

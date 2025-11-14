@@ -1,20 +1,20 @@
 {
-  "name": "personal-portfolio",
-  "type": "module",
-  "version": "0.0.1",
-  "scripts": {
-    "dev": "astro dev",
-    "start": "astro dev",
-    "build": "astro check && astro build",
-    "preview": "astro preview",
-    "astro": "astro"
-  },
-  "dependencies": {
-    "@astrojs/check": "0.9.4",
-    "astro": "5.2.3",
-    "prettier": "^3.3.3",
-    "prettier-plugin-astro": "^0.14.1",
-    "sass": "^1.77.8",
-    "typescript": "^5.5.4"
-  }
+    "name": "tihn.dev",
+    "type": "module",
+    "version": "1.0.0",
+    "scripts": {
+        "dev": "astro dev",
+        "start": "astro dev",
+        "build": "astro check && astro build",
+        "preview": "astro preview",
+        "astro": "astro"
+    },
+    "dependencies": {
+        "@astrojs/check": "0.9.5",
+        "astro": "5.15.7",
+        "prettier": "^3.6.2",
+        "prettier-plugin-astro": "^0.14.1",
+        "sass": "^1.94.0",
+        "typescript": "^5.9.3"
+    }
 }

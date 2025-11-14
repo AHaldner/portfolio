@@ -1,32 +1,31 @@
 ---
 const pages = [
-  { title: "Home", href: "/" },
-  { title: "About", href: "/about" },
-  { title: "Blog", href: "/blog" },
-  { title: "Contact", href: "/contact" },
+    { title: 'Home', href: '/' },
+    { title: 'Posts', href: '/posts' },
+    { title: 'Contact', href: '/contact' },
 ];
 ---
 
 <ul>
-  {
-    pages.map((page) => (
-      <li>
-        <a href={page.href}>{page.title}</a>
-      </li>
-    ))
-  }
+    {
+        pages.map((page) => (
+            <li>
+                <a href={page.href}>{page.title}</a>
+            </li>
+        ))
+    }
 </ul>
 
 <style lang="scss">
-  ul {
-    display: flex;
-    justify-content: right;
-    gap: 1rem;
-    list-style: none;
-    padding: 0;
-  }
+    ul {
+        display: flex;
+        justify-content: right;
+        gap: 1rem;
+        list-style: none;
+        padding: 0;
+    }
 
-  li {
-    margin: 0;
-  }
+    li {
+        margin: 0;
+    }
 </style>

@@ -1,0 +1,41 @@
+---
+import Layout from '@layouts/Layout.astro';
+
+interface Post {
+    url: string;
+
+    frontmatter: {
+        title: string;
+    };
+}
+
+const allPosts: Post[] = Object.values(import.meta.glob('./posts/*.md', { eager: true }));
+
+const pageTitle = 'Posts';
+---
+
+<Layout title={pageTitle}>
+    <h1>Posts</h1>
+    <p>Updates on my latest things I am working on.</p>
+    <ul>
+        {
+            allPosts.map((post) => (
+                <li>
+                    <a href={post.url}>{post.frontmatter.title}</a>
+                </li>
+            ))
+        }
+    </ul>
+</Layout>
+
+<style lang="scss">
+    ul {
+        list-style: none;
+        padding: 0;
+        margin-top: 2rem;
+    }
+
+    li {
+        margin-bottom: 0.5rem;
+    }
+</style>

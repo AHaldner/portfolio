@@ -1,4 +1,18 @@
-import { defineConfig } from "astro/config";
+import { defineConfig } from 'astro/config';
 
 // https://astro.build/config
-export default defineConfig({});
+export default defineConfig({
+    output: 'static',
+    site: 'https://tihn.dev',
+    vite: {
+        resolve: {
+            alias: {
+                '@': '/src',
+                '@components': '/src/components',
+                '@layouts': '/src/layouts',
+                '@pages': '/src/pages',
+                '@styles': '/src/styles',
+            },
+        },
+    },
+});

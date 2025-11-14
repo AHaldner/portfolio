@@ -1,26 +1,26 @@
 ---
-import Social from "./Social.astro";
+import Social from './Social.astro';
 ---
 
 <footer>
-  <div class="footer-socials">
-    <Social platform="github.com" username="AHaldner" />
-    <Social platform="bluesky.com" username="tihncs" />
-    <Social platform="threads.net" username="tihncs" />
-  </div>
+    <div class="footer-socials">
+        <Social platform="github.com" username="AHaldner" />
+        <Social platform="bsky.app" username="profile/tihn.dev" />
+        <Social platform="npmjs.com" username="~tihn" />
+    </div>
 </footer>
 
 <style lang="scss">
-  footer {
-    max-width: var(--content-width);
-    margin: auto;
-  }
-
-  .footer {
-    &-socials {
-      display: flex;
-      flex-direction: row;
-      gap: 20px;
+    footer {
+        max-width: var(--content-width);
+        margin: auto;
     }
-  }
+
+    .footer {
+        &-socials {
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+        }
+    }
 </style>
