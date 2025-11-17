@@ -1,0 +1,27 @@
+---
+import Image from 'astro/components/Image.astro';
+import Layout from '@layouts/Layout.astro';
+
+const pageTitle = '404';
+---
+
+<Layout title={pageTitle}>
+    <div class="not-found">
+        <Image
+            src="/images/scared.webp"
+            alt="A scared kitten with wet eyes"
+            width={136}
+            height={128}
+            loading={'eager'}
+        />
+        <h1>404 - Page Not Found</h1>
+        <p>Oops! The page you're looking for doesn't exist.</p>
+        <a href="/">Take me back home</a>
+    </div>
+</Layout>
+
+<style lang="scss">
+    .not-found {
+        text-align: center;
+    }
+</style>
