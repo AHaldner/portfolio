@@ -16,7 +16,7 @@ VSCode served me well for a long time, but at some point the cracks started show
 
 Zed has a PHP extension and it works well enough out of the box. The catch is formatting. By default it leans on Prettier, which is fine for TypeScript but has no real understanding of PHP coding standards. If your projects follow PSR-12 or a custom `phpcs.xml` ruleset, Prettier will happily reformat your code in ways that break your standards.
 
-The right tool for the job is `phpcbf` — the auto-fixer that ships with [PHP_CodeSniffer](https://github.com/squizlabs/PHP_CodeSniffer). Zed does support external formatters, so in theory you just point it at `phpcbf` and you are done.
+The right tool for the job is `phpcbf`, the auto-fixer that ships with [PHP_CodeSniffer](https://github.com/squizlabs/PHP_CodeSniffer). Zed does support external formatters, so in theory you just point it at `phpcbf` and you are done.
 
 ## The problem with PHP_CodeSniffer Auto-Fixer
 
