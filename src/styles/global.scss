@@ -49,3 +49,28 @@ a {
         opacity: 0.6;
     }
 }
+
+pre {
+    background: #16161e;
+    border-radius: 6px;
+    padding: 1.25rem 1.5rem;
+    overflow-x: auto;
+    font-size: 0.9rem;
+    line-height: 1.7;
+    margin-block: 1.5rem;
+
+    code {
+        background: none;
+        padding: 0;
+        border-radius: 0;
+        color: var(--text-color);
+    }
+}
+
+code {
+    background: #292e42;
+    color: var(--accent-color);
+    padding: 0.15em 0.4em;
+    border-radius: 4px;
+    font-size: 0.875em;
+}
