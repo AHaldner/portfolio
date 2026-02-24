@@ -22,7 +22,7 @@ The right tool for the job is `phpcbf` — the auto-fixer that ships with [PHP_C
 
 In practice, wiring up `phpcbf` as a Zed external formatter is not straightforward. There are two issues.
 
-The first is exit codes. `phpcbf` returns `1` when it successfully makes fixes, and `2` or higher for actual errors. Most tools treat a non-zero exit code as failure, and Zed is no different — it sees the `1` and assumes something went wrong, discarding the output entirely.
+The first is exit codes. `phpcbf` returns `1` when it successfully makes fixes, and `2` or higher for actual errors. Most tools treat a non-zero exit code as failure, and Zed is no different. It sees the `1` and assumes something went wrong, discarding the output entirely.
 
 The second is how Zed pipes the file content. It passes the buffer through stdin rather than operating on a real file path, but `phpcbf` needs an actual file to work against. Without a real file it gets confused and either errors out or produces no useful output.
 
