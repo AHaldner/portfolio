@@ -6,10 +6,15 @@ interface Post {
 
     frontmatter: {
         title: string;
+        pubDate: string;
     };
 }
 
-const allPosts: Post[] = Object.values(import.meta.glob('./posts/*.md', { eager: true }));
+const allPosts: Post[] = (
+    Object.values(import.meta.glob('./posts/*.md', { eager: true })) as Post[]
+).sort(
+    (a, b) => new Date(b.frontmatter.pubDate).getTime() - new Date(a.frontmatter.pubDate).getTime(),
+);
 
 const pageTitle = 'Posts';
 ---
