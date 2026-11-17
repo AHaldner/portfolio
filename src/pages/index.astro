@@ -12,17 +12,17 @@ import Layout from '@layouts/Layout.astro';
     </p>
     <p>
         I wrote my own Bun security scanner,
-        <a
-            href="https://www.npmjs.com/package/@tihn/bun-guard"
-            target="_blank"
-            rel="noopener noreferrer"
-        >
-            @tihn/bun-guard
-        </a>
-        , powered by the osv.dev database, and I sometimes make silly placeholder sites like
-        <a href="https://waga.gay" target="_blank" rel="noopener noreferrer">
-            waga.gay
-        </a>
+        {[
+            <a
+                href="https://www.npmjs.com/package/@tihn/bun-guard"
+                target="_blank"
+                rel="noopener noreferrer"
+                set:text="@tihn/bun-guard"
+            />,
+            ',',
+        ]}
+        powered by the osv.dev database, and I sometimes make silly placeholder sites like
+        <a href="https://waga.gay" target="_blank" rel="noopener noreferrer" set:text="waga.gay" />
         when I'm bored of using example.com.
     </p>
 </Layout>

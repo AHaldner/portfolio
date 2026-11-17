@@ -1,2 +1,5 @@
 [install]
 minimumReleaseAge = 259200 # 3 days
+
+[install.security]
+scanner = "@tihn/bun-guard"
