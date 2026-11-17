@@ -1,0 +1,44 @@
+[
+    {
+        "label": "Astro: dev",
+        "command": "./node_modules/.bin/vp",
+        "args": ["run", "dev"],
+        "save": "all"
+    },
+    {
+        "label": "Project: check",
+        "command": "./node_modules/.bin/vp",
+        "args": ["run", "check"],
+        "save": "all"
+    },
+    {
+        "label": "Astro: build",
+        "command": "./node_modules/.bin/vp",
+        "args": ["run", "build"],
+        "save": "all"
+    },
+    {
+        "label": "Astro: preview",
+        "command": "./node_modules/.bin/vp",
+        "args": ["run", "preview"],
+        "save": "all"
+    },
+    {
+        "label": "Oxc: lint",
+        "command": "./node_modules/.bin/vp",
+        "args": ["run", "lint"],
+        "save": "all"
+    },
+    {
+        "label": "Oxc: format",
+        "command": "./node_modules/.bin/vp",
+        "args": ["run", "fmt"],
+        "save": "all"
+    },
+    {
+        "label": "TypeScript: typecheck",
+        "command": "./node_modules/.bin/vp",
+        "args": ["run", "typecheck"],
+        "save": "all"
+    }
+]

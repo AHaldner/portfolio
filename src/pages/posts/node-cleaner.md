@@ -1,6 +1,6 @@
 ---
-layout: "@layouts/PostLayout.astro"
-title: "Node Cleaner"
+layout: '@layouts/PostLayout.astro'
+title: 'Node Cleaner'
 description: A simple tool written in Rust and using Ratatui for the TUI.
 pubDate: 2026-02-23
 author: Andrin

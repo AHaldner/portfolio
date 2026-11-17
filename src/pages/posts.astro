@@ -11,7 +11,7 @@ interface Post {
 }
 
 const allPosts: Post[] = (
-    Object.values(import.meta.glob('./posts/*.md', { eager: true })) as Post[]
+    Object.values(import.meta.glob('@pages/posts/*.md', { eager: true })) as Post[]
 ).sort(
     (a, b) => new Date(b.frontmatter.pubDate).getTime() - new Date(a.frontmatter.pubDate).getTime(),
 );
@@ -23,13 +23,11 @@ const pageTitle = 'Posts';
     <h1>Posts</h1>
     <p>Updates on my latest things I am working on.</p>
     <ul>
-        {
-            allPosts.map((post) => (
-                <li>
-                    <a href={post.url}>{post.frontmatter.title}</a>
-                </li>
-            ))
-        }
+        {allPosts.map((post) => (
+            <li>
+                <a href={post.url}>{post.frontmatter.title}</a>
+            </li>
+        ))}
     </ul>
 </Layout>
 

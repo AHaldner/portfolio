@@ -1,6 +1,6 @@
 ---
-layout: "@layouts/PostLayout.astro"
-title: "waga.gay"
+layout: '@layouts/PostLayout.astro'
+title: 'waga.gay'
 description: A silly little placeholder site built around the waga 7tv emote.
 pubDate: 2025-10-09
 author: Andrin

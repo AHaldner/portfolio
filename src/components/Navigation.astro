@@ -7,13 +7,11 @@ const pages = [
 ---
 
 <ul>
-    {
-        pages.map((page) => (
-            <li>
-                <a href={page.href}>{page.title}</a>
-            </li>
-        ))
-    }
+    {pages.map((page) => (
+        <li>
+            <a href={page.href}>{page.title}</a>
+        </li>
+    ))}
 </ul>
 
 <style lang="scss">

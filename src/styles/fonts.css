@@ -1,0 +1,33 @@
+@font-face {
+    font-family: 'JetBrains Mono';
+    src: url('@assets/fonts/jetbrainsmono.woff2') format('woff2');
+    font-weight: 100 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'JetBrains Mono';
+    src: url('@assets/fonts/jetbrainsmono-italic.woff2') format('woff2');
+    font-weight: 100 800;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'JetBrains Mono Menlo';
+    src: local('Menlo');
+    size-adjust: 99.6594%;
+    ascent-override: 102.3486%;
+    descent-override: 30.1025%;
+    line-gap-override: 0%;
+}
+
+@font-face {
+    font-family: 'JetBrains Mono Courier';
+    src: local('Courier New');
+    size-adjust: 99.9837%;
+    ascent-override: 102.0166%;
+    descent-override: 30.0049%;
+    line-gap-override: 0%;
+}

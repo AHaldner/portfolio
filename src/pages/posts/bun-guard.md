@@ -1,6 +1,6 @@
 ---
-layout: "@layouts/PostLayout.astro"
-title: "Bun Guard"
+layout: '@layouts/PostLayout.astro'
+title: 'Bun Guard'
 description: A tiny Bun security scanner powered by the osv.dev database.
 pubDate: 2025-11-14
 author: Andrin

@@ -1,6 +1,6 @@
 ---
-layout: "@layouts/PostLayout.astro"
-title: "PHP Support for Zed"
+layout: '@layouts/PostLayout.astro'
+title: 'PHP Support for Zed'
 description: Adding PHP formatting support for phpcbf.
 pubDate: 2026-02-24
 author: Andrin

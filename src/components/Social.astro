@@ -7,4 +7,6 @@ interface Props {
 const { platform, username } = Astro.props;
 ---
 
-<a target="_blank" href={`https://${platform}/${username}`}>{platform}</a>
+<a target="_blank" href={`https://${platform}/${username}`}>
+    {platform}
+</a>
